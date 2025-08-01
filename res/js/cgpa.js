@@ -46,3 +46,12 @@ removeGpaBtn.addEventListener("click", function(){
     gpaList.removeChild(gpaList.lastElementChild);
     updateCGPA();
 });
+
+window.addEventListener("DOMContentLoaded", function(){
+    const userName = document.getElementById("user-name");
+    let name = prompt("What is your name?");
+
+    if (name && name.trim() !== "") {
+        userName.textContent = name.trim();
+      }
+});
