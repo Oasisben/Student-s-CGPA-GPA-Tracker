@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>CGPA/GPA Tracker</title>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2 class="logo">🎓 GPA</h2>
+      <nav class="nav">
+        <a href="index.html" class="nav-item active">🏠 Home</a>
+        <a href="cgpa.html" class="nav-item">➕ Calculate CGPA</a>
+        <a href="#" class="nav-item">👤 Profile</a>
+      </nav>
+    </aside>
+  
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="top-bar">
+        <h1>Sarah Johnson</h1>
+      </header>
+
+      <section class="gpa-summary">
+        <div class="gpa-box">
+          <p>Current GPA</p>
+          <h2 id="gpa-value">3.8</h2>
+        </div>
+
+        <div class="grade-overview">
+          <h3>Grade Overview</h3>
+          <ul class="grade-list" id="course-list">
+            <li>Course – CSC 332</li>
+            <li>Credit Unit – 3</li>
+            <li>Grade – A</li>
+          </ul>
+        </div>
+
+        <div class="add-grade-form">
+          <h3>Add Grade</h3>
+          <form id="grade-form">
+            <label>Course</label>
+              <input type="text" id="course" placeholder="Enter course code">
+
+            <label>Credit Unit</label>
+            <select id="credit-unit">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+
+            <label>Grade (A-F)</label>
+            <select id="grade">
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+              <option>E</option>
+              <option>F</option>
+            </select>
+
+            <button type="submit">Add Grade</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="res/js/main.js"></script>
+</body>
+</html>
